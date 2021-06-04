@@ -17,6 +17,10 @@ class _MainMenuState extends State<MainMenu> with GeneralConfiguration{
   Future<void> retrieveData() async{
     productList = await database.RetrieveDeviceData();
     if(mounted){setState(() {});}
+    database.snapshotFunction((List<Product> list){
+      if(mounted){setState(() {this.productList=list;});}
+    });
+
   }
   @override
   void initState() {
@@ -68,6 +72,7 @@ class _MainMenuState extends State<MainMenu> with GeneralConfiguration{
         backgroundColor: Colors.white,
         onPressed: ()async{
           await Navigator.pushNamed(context, '/registerProduct',arguments:{});
+
         },
 
       ),

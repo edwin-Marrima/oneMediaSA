@@ -16,6 +16,11 @@ class Database{
     });
     return list;
   }
+  Future<void> snapshotFunction(Function functionSet){
+    DBRef.child(mainPath).onChildAdded.listen((data) async{
+      functionSet (await RetrieveDeviceData());
+    });
+  }
   Future<void> registerProduct(Product product) async{
     await DBRef.child(mainPath+"/"+(product.name+product.price.toString())).set(p.toMap(product));
   }

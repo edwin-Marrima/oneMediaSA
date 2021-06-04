@@ -52,7 +52,7 @@ class _ProductRegisterState extends State<ProductRegister> with GeneralConfigura
                           Text('Efetuando inserção\nAguarde… ',style: TextStyle(fontFamily: 'Montserrat',color: Colors.grey[900] ),textAlign: TextAlign.center,)
                         ],
                       ),
-                    ),
+                     ),
                   ):Text(""),
                   Container(
                       width: w*0.8,
