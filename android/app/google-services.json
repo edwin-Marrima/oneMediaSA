@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493173865469",
+    "project_id": "onemediasa-d5815",
+    "storage_bucket": "onemediasa-d5815.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493173865469:android:2aa75e7dde4696fa2cf794",
+        "android_client_info": {
+          "package_name": "com.example.one_media"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493173865469-u5mmakd8gp759v20ub4et4anbvjgg0p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5MMk4UscYm8r815RIO2AeXhZXEMtKoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493173865469-u5mmakd8gp759v20ub4et4anbvjgg0p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

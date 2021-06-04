@@ -2,19 +2,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:one_media/mixin/generalConfig.dart';
 import 'package:one_media/user_interface/components/productCard.dart';
+import 'package:one_media/backend/datatype/converter.dart';
+import 'package:one_media/backend/datatype/Product.dart';
 class MainMenu extends StatefulWidget {
   @override
   _MainMenuState createState() => _MainMenuState();
 }
 
 class _MainMenuState extends State<MainMenu> with GeneralConfiguration{
+  Converter converter = Converter();
   @override
-
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('OneMedia',style: TextStyle(fontFamily: 'Montserrat',color: Colors.grey[400] ),),
+        title: Text(converter.xxx("12345"),style: TextStyle(fontFamily: 'Montserrat',color: Colors.grey[400] ),),
         elevation: 0.7,
         backgroundColor: Colors.grey[900],
         actions: <Widget>[

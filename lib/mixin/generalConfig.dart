@@ -7,6 +7,7 @@ mixin GeneralConfiguration{
     width: 130,height: 90,
     margin: EdgeInsets.fromLTRB(0,14,0,0),
     decoration: BoxDecoration(
+      borderRadius: BorderRadius.all(Radius.circular(15)),
       image: DecorationImage(
         alignment:Alignment(1,1),
         image: AssetImage('img/1.jpg'),
