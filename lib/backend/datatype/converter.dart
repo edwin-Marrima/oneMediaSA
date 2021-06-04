@@ -10,28 +10,21 @@ class Converter{
       ["","cem","duzentos","trezentos","quatrocentos","quinhentos","seissentos","setesentos","oitocentos","novecentos"],
     ];
   List<int> divNr = [1,1,10,100,1000,10000,10000,10000,10000,10000,10000,10000];
-  List<String> letter = List();
-  String xxx(String nr){
-    int number = int.parse(nr);
 
-    print(processer(parseList(number)));
-    return "a";
+  List<String> letter = List();
+  String convertExt(String nr){
+    int number = int.parse(nr);
+    return processer(parseList(number));
   }
 
   String processer(List<int> parc){
-
+    List<String> functions = [processTwo(parc),processThree(parc),processFour(parc),processFive(parc)];
     if(parc.length==1){
       return  numerics[0][parc[0]];
-    }else if(parc.length==2){
-      return   processTwo(parc);
-    }else if(parc.length==3){
-      return  processThree(parc);
+    }else{
+      return functions[parc.length-2];
     }
-    else if(parc.length==4){
-      return  processFour(parc);
-    }else if(parc.length==5){
-      return  processFive(parc);
-    }
+
 
   }
   String mainVerification(List<int> parc){

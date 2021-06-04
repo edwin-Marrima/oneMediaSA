@@ -3,14 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 mixin GeneralConfiguration{
-  Container imagePrinter ()=> Container(
-    width: 130,height: 90,
+  Container imagePrinter (double w, double h,String path)=> Container(
+    width: w,height: h,
     margin: EdgeInsets.fromLTRB(0,14,0,0),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.all(Radius.circular(15)),
       image: DecorationImage(
         alignment:Alignment(1,1),
-        image: AssetImage('img/1.jpg'),
+        image: AssetImage(path),
         fit:BoxFit.fill,
       ),
     ),
